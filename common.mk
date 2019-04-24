@@ -64,8 +64,10 @@ $(SMEMS_FILE) $(SMEMS_FIR): $(SMEMS_CONF)
 #########################################################################################
 # helper rule to just make verilog files
 #########################################################################################
-.PHONY: verilog
+.PHONY: verilog top
 verilog: $(sim_vsrcs)
+
+beagle: $(VERILOG_FILE) $(SMEMS_CONF)
 
 #########################################################################################
 # run assembly/benchmarks rules
