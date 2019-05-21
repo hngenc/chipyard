@@ -8,10 +8,10 @@ Welcome to ReBAR's documentation!
 
 ReBAR is a a framework for designing and evaluating full-system hardware using agile teams. It is composed of a collection of tools and libraries designed to provide an intergration between open-source and commercial tools for the development of systems-on-chip. New to ReBAR? Jump to the :ref:`rebar-basics` page for more info.
 
-.. toctree::
-   :maxdepth: 3
-   :caption: Getting Started:
-   :numbered:
+
+The documentation outline should look like this
+   
+   Getting Started:
 
    ReBAR-Basics
    Initial-Setup/index
@@ -20,38 +20,51 @@ ReBAR is a a framework for designing and evaluating full-system hardware using a
    Running-Simulations-Tutorial/index
    Building-Chips-Tutorial/index
 
-.. toctree::
-   :maxdepth: 3
-   :caption: Generators:
+   Generators:
 
    Generators/Rocketchip/index
    Generators/BOOM/index
    Generators/Hwacha/index
 
 
-.. toctree::
-   :maxdepth: 3
-   :caption: Simulation:
-
+   Simulation:
    Simulation/Open-Source-Simulators/index
    Simulation/Commercial-Simulators/index
    Simulation/FPGA-Based-Simulation/index
 
 
 
-.. toctree::
-   :maxdepth: 3
-   :caption: Production:
+   Production:
 
    Production/VLSI-Physical-Design/index
-
+   Software/Toolchains/index
 
 .. toctree::
    :maxdepth: 3
-   :caption: Software:
+   :caption: Getting Started:
+   :numbered:
 
-   Software/Toolchains/index
+   Getting-Started/index
 
+   :maxdepth: 3
+   :caption: Simulation:
+   :numbered:
+   Simulation/index
+
+   :maxdepth: 3
+   :caption: Generators:
+   :numbered:
+   Generators/index
+
+   :maxdepth: 3
+   :caption: Tools:
+   :numbered:
+   Tools/index
+
+   :maxdepth: 3
+   :caption: VLSI Production:
+   :numbered:
+   VLSI/index
 
 
 Indices and tables
