@@ -95,6 +95,7 @@ ifeq ($(SUB_PROJECT),beagle)
 	CONFIG            ?= BeagleRocketConfig
 	CONFIG_PACKAGE    ?= beagle
 	GENERATOR_PACKAGE ?= freechips.rocketchip.system
+	TB                ?= TestDriver
 	TOP               ?= BeagleChipTop
 	#SBT_PROJECT       ?= beagle
 	#MODEL             ?= BeagleTestHarness
@@ -172,7 +173,10 @@ rocketchip_vsrc_dir = $(ROCKETCHIP_DIR)/src/main/resources/vsrc
 sim_vsrcs = \
 	$(VERILOG_FILE) \
 	$(HARNESS_FILE) \
-	$(SMEMS_FILE)
+	$(SMEMS_FILE) \
+	$(build_dir)/AsyncResetReg.v \
+	$(base_dir)/generators/awl/src/main/resources/generic_transceiver.sv \
+	$(base_dir)/generators/beagle/src/main/resources/ClockReceiver.v
 
 #########################################################################################
 # assembly/benchmark variables
